@@ -7,10 +7,12 @@
     <title>Bookmark landing page</title>
     <link href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet" />
+ 
   </head>
 
   <body>
-    <header class="navbar">
+    <header class="navbar" style="text-align: center; padding:  20px;">
+
       <a class="logo" href="#">
         <svg class="logo__svg" width="148" height="25" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
@@ -22,26 +24,23 @@
           </g>
         </svg>
       </a>
-      <input type="image" class="navbar__hamburger-icon" src="images/icon-hamburger.svg" alt="Menu button"/>
-      <input type="image" class="navbar__close-icon hide" src="images/icon-close.svg" alt="Close button"/>
-      <nav class="navigation hide">
-        <ul class="navigation__menu">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Featuress</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Pricing</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">Contact</a>
-          </li>
-          <li class="navigation__item"><a class="navigation__link btn btn--block btn--outline" href="#">Login</a></li>
-        </ul>
-        <ul class="navigation__social hide">
-          <li><a href="#"><img src="images/icon-facebook.svg" alt="Facebook Icon"/></a></li>
-          <li><a href="#"><img src="images/icon-twitter.svg" alt="Twitter Icon"/></a></li>
-        </ul>
-      </nav>
+
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Featuress</a>
+        <a href="#">Pricing</a>
+        <a href="#">Contact</a>
+        <br>
+     <a class="navigation__link btn btn--block btn--outline" href="#" style="color: rgb(255, 255, 255) !important; text-align: center;padding-bottom: 40px;">Login</a>
+<br>
+  <div style=" display: flex; justify-content: space-evenly;">
+    <a href="#"><img src="images/icon-facebook.svg" alt="Facebook Icon" class="img11"></a>
+    <a href="#"><img src="images/icon-twitter.svg" alt="Twitter Icon" class="img11"></a>
+  </div>
+       
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
     </header>
     <div class="container">
         <main>
@@ -63,6 +62,17 @@
               </div>
             </div>
           </section>
+
+          <script>
+            function openNav() {
+              document.getElementById("mySidenav").style.width = "250px";
+            }
+            
+            function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+            }
+            </script>
+=======
 
           <section class="features">
             <header class="features__header">
@@ -266,5 +276,6 @@
         </div>
       </footer>
       <script src="js/scripts.js"></script>
+
   </body>
 </html>
