@@ -243,7 +243,9 @@ img {
 
 .intro__btns {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
   margin-top: 40px;
 }
 
@@ -535,4 +537,80 @@ body {
 
 width: 50px;
 height: 50px;
+=======
+
+/* Media queries size is temporary */
+
+@media only screen and (min-width: 700px) {
+  /*Medium view */
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(1, minmax(430px, 500px));
+    grid-column-gap: 30px;
+  }
+
+  .chrome {
+    align-self: start;
+  }
+
+  .firefox {
+    align-self: center;
+  }
+
+  .opera {
+    align-self: flex-end;
+  }
+}
+
+/*Desktop view */
+
+@media only screen and (min-width: 1281px) {
+  .container {
+    padding: 0 170px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+  .cards {
+    grid-column-gap: 70px;
+  }
+
+  .aboutUs {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    padding-bottom: 32px;
+  }
+  .footer-nav {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .footer-nav__item {
+    margin-bottom: 0;
+    margin-right: 48px;
+  }
+  .footer__social {
+    align-items: center;
+  }
+  form.subscribe__form {
+    flex-direction: row;
+    padding-bottom: 70px;
+    justify-content: center;
+  }
+  input[type='email'],
+  .subscribe--btn {
+    width: 24vw;
+    padding: 20px 0;
+    margin: 0 5px 0;
+  }
+  .subscribe--btn {
+    width: 10vw;
+  }
+  details p {
+    text-align: start;
+  }
+
 }
