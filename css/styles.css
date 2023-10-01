@@ -243,7 +243,9 @@ img {
 
 .intro__btns {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
   margin-top: 40px;
 }
 
