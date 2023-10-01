@@ -484,3 +484,7 @@ footer path.logo__text {
   position: relative;
   align-items: baseline;
 }
+.navigation{
+  display:flex;
+  
+}
