@@ -22,6 +22,7 @@ h6 {
   text-align: center;
 }
 
+
 a {
   color: white;
   text-decoration: none;
@@ -757,3 +758,13 @@ body.dark-mode #message {
   color: whitesmoke;
 } 
 
+.footer-nav li a:hover {
+  color: rgb(109, 201, 255);
+  text-decoration: underline;
+}
+
+header.navbar {
+  text-align: center; 
+  background: rgb(35, 91, 144); 
+  color: whitesmoke;
+}
